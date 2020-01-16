@@ -9,5 +9,5 @@ const getMeme = (request, response) => {
 };
 
 module.exports = {
-  getMeme
+  getMeme,
 };
