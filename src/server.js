@@ -1,5 +1,6 @@
 const http = require('http');
 const htmlHandler = require('./htmlResponses.js');
+const imageHandler = require('./imageResponses.js');
 const textHandler = require('./textResponses.js');
 const jsonHandler = require('./jsonResponses.js');
 
@@ -14,6 +15,9 @@ const onRequest = (request, response) => {
       break;
     case '/page2':
       htmlHandler.getPage2(request, response);
+      break;
+    case '/dankmemes':
+      imageHandler.getMeme(request, response);
       break;
     case '/hello':
       textHandler.getHello(request, response);
